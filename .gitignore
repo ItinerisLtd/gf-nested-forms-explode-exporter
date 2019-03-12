@@ -1,0 +1,8 @@
+### Composer ###
+/vendor/
+
+### PhpStorm ###
+/.idea/
+
+### PHPStan ###
+/wordpress/

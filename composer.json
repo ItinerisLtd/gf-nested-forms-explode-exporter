@@ -1,0 +1,87 @@
+{
+    "name": "itinerisltd/gf-nested-forms-explode-exporter",
+    "type": "wordpress-plugin",
+    "description": "TODO.",
+    "keywords": [
+        "exporter",
+        "gravity-form",
+        "nested-form",
+        "wordpress",
+        "wp"
+    ],
+    "homepage": "https://itinerisltd.github.io/gf-nested-forms-explode-exporter/",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Itineris Limited",
+            "email": "hello@itineris.co.uk",
+            "homepage": "https://itineris.co.uk/",
+            "role": "Company"
+        },
+        {
+            "name": "Tang Rufus",
+            "email": "tangrufus@gmail.com",
+            "homepage": "https://typist.tech/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "itinerisltd/itineris-wp-coding-standards": "^0.2.2",
+        "roave/security-advisories": "dev-master",
+        "roots/wordpress": "^5.0"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Itineris\\GFNestedFormsExplodeExporter\\": "src/"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "/.*",
+            "/*",
+            "!*LICENSE*",
+            "!/*.php",
+            "!/README.txt",
+            "!src",
+            "!vendor/*.php",
+            "!vendor/**/*.php"
+        ]
+    },
+    "prefer-stable": true,
+    "scripts": {
+        "pretag": [
+            "composer update",
+            "@style:check",
+            "composer normalize",
+            "github_changelog_generator --no-verbose",
+            "npx doctoc README.md"
+        ],
+        "release:build": [
+            "rm -fr vendor",
+            "composer install --no-dev --prefer-dist --optimize-autoloader --no-suggest",
+            "rm -fr release wordpress",
+            "composer archive --format=zip --dir=release --file=gf-nested-forms-explode-exporter"
+        ],
+        "style:check": "phpcs",
+        "style:fix": "phpcbf"
+    },
+    "support": {
+        "email": "hello@itineris.co.uk",
+        "issues": "https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter/issues",
+        "source": "https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter"
+    }
+}
