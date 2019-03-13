@@ -20,26 +20,26 @@ class EntryTransformer
     {
         $array = self::toArray($entry);
 
-        $nestedArray = array_filter($array, function ($item): bool {
+        $children = array_filter($array, function ($item): bool {
             return is_array($item) && [] !== $item;
         });
-        $nonNestedArray = array_filter($array, function ($item): bool {
+        $parent = array_filter($array, function ($item): bool {
             return ! is_array($item);
         });
 
-        if (count($nestedArray) < 1) {
-            return [$nonNestedArray];
+        if (count($children) < 1) {
+            return [$parent];
         }
-        if (count($nestedArray) > 1) {
+        if (count($children) > 1) {
             // TODO: Throw exception instead.
             wp_die('Multiple nested forms found!');
         }
 
         // TODO: Use PHP 7.3 array_key_first.
-        $key = array_keys($nestedArray)[0];
-        $nestedEntries = $nestedArray[$key];
+        $key = array_keys($children)[0];
+        $childEntries = $children[$key];
 
-        return array_map(function (array $nestedEntry) use ($key, $nonNestedArray): array {
+        $mergedChildren = array_map(function (array $nestedEntry) use ($key, $parent): array {
             $prefixedKeys = array_map(function (string $k) use ($key): string {
                 return $key . ' ' . $k;
             }, array_keys($nestedEntry));
@@ -49,8 +49,10 @@ class EntryTransformer
                 $nestedEntry
             );
 
-            return array_merge($nonNestedArray, $prefixedNestedEntry);
-        }, $nestedEntries);
+            return array_merge($parent, $prefixedNestedEntry);
+        }, $childEntries);
+
+        return array_merge($mergedChildren, [$parent]);
     }
 
     /**
