@@ -1,11 +1,12 @@
 {
     "name": "itinerisltd/gf-nested-forms-explode-exporter",
     "type": "wordpress-plugin",
-    "description": "TODO.",
+    "description": "Exporter gravity forms nested entries.",
     "keywords": [
         "exporter",
-        "gravity-form",
-        "nested-form",
+        "gravity-forms",
+        "gravity-perks",
+        "nested-forms",
         "wordpress",
         "wp"
     ],

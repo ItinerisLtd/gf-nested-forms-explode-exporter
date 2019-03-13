@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     GF Nested Forms Explode Exporter
  * Plugin URI:      https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter
- * Description:     TODO.
+ * Description:     Exporter gravity forms nested entries.
  * Version:         0.0.1
  * Author:          Itineris Limited
  * Author URI:      https://itineris.co.uk

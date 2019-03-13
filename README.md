@@ -18,6 +18,10 @@
 
 ## Minimum Requirements
 
+- PHP v7.2
+- WordPress v5.0
+- [Gravity Forms](https://www.gravityforms.com/) v2.3.2
+- [GP Nested Forms by Gravity Perks](https://gravitywiz.com/documentation/gravity-forms-nested-forms/) v1.0-beta-6.22
 
 ## Installation
 
@@ -27,9 +31,11 @@ $ composer require itinerisltd/gf-nested-forms-explode-exporter
 
 ## Usage
 
+TODO.
 
 ## Limitation
 
+TODO.
 
 ## FAQ
 
