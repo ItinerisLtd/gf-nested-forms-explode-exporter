@@ -32,7 +32,6 @@ class ExporterPage
             )
         );
 
-
         $registrar = new Registrar(static::SLUG);
         $registrar->add($section);
         $registrar->run();
@@ -61,7 +60,9 @@ class ExporterPage
         );
     }
 
-
+    /**
+     * TODO: Refactor!
+     */
     public static function handleFormSubmit()
     {
         $formId = '';

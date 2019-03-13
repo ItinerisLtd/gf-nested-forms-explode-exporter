@@ -7,6 +7,9 @@ use GFAPI;
 
 class FormRepository
 {
+    /**
+     * TODO: Refactor!
+     */
     public static function allAsDropdownChoices(): array
     {
         $forms = static::all();
