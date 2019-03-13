@@ -28,6 +28,7 @@
     ],
     "require": {
         "php": "^7.2",
+        "composer/installers": "^1.4",
         "illuminate/support": "^5.7.11",
         "league/csv": "^9.2",
         "typisttech/wp-better-settings": "^0.14.0"
