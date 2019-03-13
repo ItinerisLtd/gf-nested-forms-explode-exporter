@@ -65,7 +65,9 @@ class ExporterPage
     public static function handleFormSubmit()
     {
         $formId = '';
+        // phpcs:ignore WordPress.Security.NonceVerification.NoNonceVerification
         if (isset($_POST[static::FORM_ID_OPTION_ID])) { // Input var okay.
+            // phpcs:ignore WordPress.Security.NonceVerification.NoNonceVerification
             $formId = sanitize_text_field(wp_unslash($_POST[static::FORM_ID_OPTION_ID])); // Input var okay.
         }
 
@@ -95,7 +97,7 @@ class ExporterPage
         header('Content-type: application/csv');
         header("Content-disposition: attachment; filename=$filename.csv");
 
-
+        // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
         echo $csvString;
         exit;
     }
