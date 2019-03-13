@@ -16,17 +16,19 @@ class EntryTransformer
     /**
      * TODO: Refactor!
      */
-    public static function toCsvRows(array $entry): array
+    public static function toExplodedRows(array $entry): array
     {
         $array = self::toArray($entry);
 
-        $nestedArray = array_filter($array, 'is_array');
+        $nestedArray = array_filter($array, function ($item): bool {
+            return is_array($item) && [] !== $item;
+        });
         $nonNestedArray = array_filter($array, function ($item): bool {
             return ! is_array($item);
         });
 
         if (count($nestedArray) < 1) {
-            return $array;
+            return [$nonNestedArray];
         }
         if (count($nestedArray) > 1) {
             wp_die('Multiple nested forms found!');
