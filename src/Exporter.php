@@ -9,7 +9,7 @@ use Illuminate\Support\Arr;
 
 class Exporter
 {
-    public static function toCsvString(array ...$explodedRows)
+    public static function toCsvString(array ...$explodedRows): string
     {
         try {
             $rows = self::normalize(...$explodedRows);
