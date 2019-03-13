@@ -4,8 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "26b926376448314ba976c1eb85b20d68",
+    "content-hash": "93963f55041b94f16fa174fc60237912",
     "packages": [
+        {
+            "name": "bupy7/php-html-form",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bupy7/php-html-form.git",
+                "reference": "2e5dfb7d445e68e5ae8b0183e83333fbbb09fc18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bupy7/php-html-form/zipball/2e5dfb7d445e68e5ae8b0183e83333fbbb09fc18",
+                "reference": "2e5dfb7d445e68e5ae8b0183e83333fbbb09fc18",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "^4.8",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "AdamWathan\\Form\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                },
+                {
+                    "name": "Vasily Velosloodcev",
+                    "email": "bupy765@gmail.com"
+                }
+            ],
+            "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
+            "time": "2017-11-04T00:00:41+00:00"
+        },
         {
             "name": "doctrine/inflector",
             "version": "v1.3.0",
@@ -601,6 +647,206 @@
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
             "time": "2019-02-27T03:31:50+00:00"
+        },
+        {
+            "name": "typisttech/wp-better-settings",
+            "version": "0.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypistTech/wp-better-settings.git",
+                "reference": "30fd7f962f8ab029ae6d6d53f48f8d4826a87f20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypistTech/wp-better-settings/zipball/30fd7f962f8ab029ae6d6d53f48f8d4826a87f20",
+                "reference": "30fd7f962f8ab029ae6d6d53f48f8d4826a87f20",
+                "shasum": ""
+            },
+            "require": {
+                "bupy7/php-html-form": "^1.0",
+                "php": ">7.0",
+                "typisttech/wp-kses-view": "^0.4.0",
+                "typisttech/wp-option-store": "^0.1.1"
+            },
+            "require-dev": {
+                "codeception/aspect-mock": "^2.1",
+                "lucatume/wp-browser": "^2.0.5",
+                "neronmoon/scriptsdev": "^0.1.1",
+                "wp-coding-standards/wpcs": "^0.13.1"
+            },
+            "suggest": {
+                "typisttech/imposter-plugin": "Wrap all composer vendor packages inside your own namespace, to prevent collisions when multiple plugins use this library",
+                "typisttech/wp-contained-hook": "Lazily instantiate objects from dependency injection container to WordPress hooks (actions and filters)",
+                "typisttech/wp-tabbed-admin-pages": "Create WordPress admin pages with tabbed navigations, the OOP way"
+            },
+            "type": "library",
+            "extra": {
+                "scripts-dev": {
+                    "post-install-cmd": "@install-dev-extra",
+                    "post-update-cmd": "@install-dev-extra"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TypistTech\\WPBetterSettings\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tang Rufus",
+                    "email": "tangrufus@gmail.com",
+                    "homepage": "https://www.typist.tech/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Typist Tech",
+                    "email": "wp-better-settings@typist.tech",
+                    "homepage": "https://www.typist.tech/"
+                }
+            ],
+            "description": "A simplified OOP implementation of the WP Settings API",
+            "homepage": "https://www.typist.tech/projects/wp-better-settings",
+            "keywords": [
+                "wordpress",
+                "wp"
+            ],
+            "time": "2018-05-11T15:10:31+00:00"
+        },
+        {
+            "name": "typisttech/wp-kses-view",
+            "version": "0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypistTech/wp-kses-view.git",
+                "reference": "762f316d60c8217344a539c7e318e500d983ae69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypistTech/wp-kses-view/zipball/762f316d60c8217344a539c7e318e500d983ae69",
+                "reference": "762f316d60c8217344a539c7e318e500d983ae69",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">7.0"
+            },
+            "require-dev": {
+                "codeception/aspect-mock": "^2.1",
+                "lucatume/wp-browser": "^1.21",
+                "neronmoon/scriptsdev": "^0.1.1",
+                "wp-coding-standards/wpcs": "^0.13.1"
+            },
+            "suggest": {
+                "typisttech/imposter-plugin": "Wrap all composer vendor packages inside your own namespace, to prevent collisions when multiple plugins use this library",
+                "typisttech/wp-admin-tabs": "Create tabbed navigation for WordPress admin dashboard, the OOP way",
+                "typisttech/wp-better-settings": "A simplified OOP implementation of the WP Settings API",
+                "typisttech/wp-contained-hook": "Lazily instantiate objects from dependency injection container to WordPress hooks (actions and filters)",
+                "typisttech/wp-tabbed-admin-pages": "Create WordPress admin pages with tabbed navigations, the OOP way"
+            },
+            "type": "library",
+            "extra": {
+                "scripts-dev": {
+                    "post-install-cmd": "@install-dev-extra",
+                    "post-update-cmd": "@install-dev-extra"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TypistTech\\WPKsesView\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Tang Rufus",
+                    "email": "tangrufus@gmail.com",
+                    "homepage": "https://typist.tech/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Typist Tech",
+                    "email": "wp-kses-view@typist.tech",
+                    "homepage": "https://typist.tech/"
+                }
+            ],
+            "description": "Safely rendering for WordPress, the OOP way",
+            "homepage": "https://typist.tech/projects/wp-kses-view",
+            "keywords": [
+                "wordpress",
+                "wp"
+            ],
+            "time": "2018-02-12T12:03:40+00:00"
+        },
+        {
+            "name": "typisttech/wp-option-store",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypistTech/wp-option-store.git",
+                "reference": "a7bd25b8d64da2af7b8eea2c8167a9a7e238b112"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypistTech/wp-option-store/zipball/a7bd25b8d64da2af7b8eea2c8167a9a7e238b112",
+                "reference": "a7bd25b8d64da2af7b8eea2c8167a9a7e238b112",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">7.0"
+            },
+            "require-dev": {
+                "codeception/aspect-mock": "^2.1",
+                "lucatume/wp-browser": "^1.21",
+                "neronmoon/scriptsdev": "^0.1.1",
+                "wp-coding-standards/wpcs": "^0.13.1"
+            },
+            "suggest": {
+                "typisttech/imposter-plugin": "Wrap all composer vendor packages inside your own namespace, to prevent collisions when multiple plugins use this library",
+                "typisttech/wp-better-settings": "A simplified OOP implementation of the WP Settings API",
+                "typisttech/wp-contained-hook": "Lazily instantiate objects from dependency injection container to WordPress hooks (actions and filters)"
+            },
+            "type": "library",
+            "extra": {
+                "scripts-dev": {
+                    "post-install-cmd": "@install-dev-extra",
+                    "post-update-cmd": "@install-dev-extra"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TypistTech\\WPOptionStore\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tang Rufus",
+                    "email": "tangrufus@gmail.com",
+                    "homepage": "https://www.typist.tech/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Typist Tech",
+                    "email": "wp-option-store@typist.tech",
+                    "homepage": "https://www.typist.tech/"
+                }
+            ],
+            "description": "Extending WordPress Options API, read options from places other than database, the OOP way",
+            "homepage": "https://www.typist.tech/projects/wp-option-store",
+            "keywords": [
+                "wordpress",
+                "wp"
+            ],
+            "time": "2017-10-27T06:03:13+00:00"
         }
     ],
     "packages-dev": [

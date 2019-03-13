@@ -7,7 +7,23 @@ use GFAPI;
 
 class FormRepository
 {
-    public static function all(): array
+    public static function allAsDropdownChoices(): array
+    {
+        $forms = static::all();
+
+        $choices = [];
+
+        foreach ($forms as $form) {
+            $id = $form['id'];
+            $title = $form['title'];
+
+            $choices[$id] = "$title (ID: $id)";
+        }
+
+        return $choices;
+    }
+
+    protected static function all(): array
     {
         $plucked = array_map(function (array $form): array {
             return [
