@@ -3,6 +3,7 @@
 ## [0.1.0](https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter/tree/0.1.0) (2019-03-13)
 **Merged pull requests:**
 
+- Version bump 0.1.0 [\#3](https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter/pull/3) ([TangRufus](https://github.com/TangRufus))
 - Add user interface [\#2](https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter/pull/2) ([TangRufus](https://github.com/TangRufus))
 - Add `Exporter` [\#1](https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter/pull/1) ([TangRufus](https://github.com/TangRufus))
 
