@@ -1,5 +1,19 @@
 # Change Log
 
+## [0.3.0](https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter/tree/0.3.0) (2019-03-13)
+[Full Changelog](https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter/compare/0.2.0...0.3.0)
+
+**Merged pull requests:**
+
+- Export parent entries in their own rows [\#4](https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter/pull/4) ([TangRufus](https://github.com/TangRufus))
+
+## [0.2.0](https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter/tree/0.2.0) (2019-03-13)
+[Full Changelog](https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter/compare/0.1.0...0.2.0)
+
+**Merged pull requests:**
+
+- Version bump 0.2.0 [\#5](https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter/pull/5) ([TangRufus](https://github.com/TangRufus))
+
 ## [0.1.0](https://github.com/ItinerisLtd/gf-nested-forms-explode-exporter/tree/0.1.0) (2019-03-13)
 **Merged pull requests:**
 
