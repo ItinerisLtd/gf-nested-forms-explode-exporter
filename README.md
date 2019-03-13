@@ -11,6 +11,22 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
+- [Goal](#goal)
+- [Minimum Requirements](#minimum-requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Limitation](#limitation)
+- [FAQ](#faq)
+  - [Will you add support for older PHP versions?](#will-you-add-support-for-older-php-versions)
+  - [It looks awesome. Where can I find some more goodies like this?](#it-looks-awesome-where-can-i-find-some-more-goodies-like-this)
+  - [Besides wp.org, where can I give a :star::star::star::star::star: review?](#besides-wporg-where-can-i-give-a-starstarstarstarstar-review)
+- [Testing](#testing)
+- [Feedback](#feedback)
+- [Change Log](#change-log)
+- [Security](#security)
+- [Credits](#credits)
+- [License](#license)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Goal
@@ -18,6 +34,10 @@
 
 ## Minimum Requirements
 
+- PHP v7.2
+- WordPress v5.0
+- [Gravity Forms](https://www.gravityforms.com/) v2.3.2
+- [GP Nested Forms by Gravity Perks](https://gravitywiz.com/documentation/gravity-forms-nested-forms/) v1.0-beta-6.22
 
 ## Installation
 
@@ -27,9 +47,11 @@ $ composer require itinerisltd/gf-nested-forms-explode-exporter
 
 ## Usage
 
+TODO.
 
 ## Limitation
 
+TODO.
 
 ## FAQ
 

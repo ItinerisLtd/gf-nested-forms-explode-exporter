@@ -31,6 +31,7 @@ class EntryTransformer
             return [$nonNestedArray];
         }
         if (count($nestedArray) > 1) {
+            // TODO: Throw exception instead.
             wp_die('Multiple nested forms found!');
         }
 
@@ -69,6 +70,9 @@ class EntryTransformer
         return $transformed;
     }
 
+    /**
+     * TODO: Refactor!
+     */
     protected static function getBasicInfo(array $entry): array
     {
         $columns = array_filter($entry, function ($value, $key): bool {
@@ -80,6 +84,9 @@ class EntryTransformer
         }, $columns);
     }
 
+    /**
+     * TODO: Refactor!
+     */
     protected static function getBasicNestedInfo(array $entry): array
     {
         $columns = array_filter($entry, function ($value, $key): bool {
@@ -91,6 +98,9 @@ class EntryTransformer
         }, $columns);
     }
 
+    /**
+     * TODO: Refactor!
+     */
     protected static function getUserInputs(array $entry): array
     {
         $transformed = [];
@@ -117,6 +127,9 @@ class EntryTransformer
         return $transformed;
     }
 
+    /**
+     * TODO: Refactor!
+     */
     protected static function getNestedUserInputs(array $entry): array
     {
         $formId = $entry['form_id'];
@@ -133,6 +146,7 @@ class EntryTransformer
             return [];
         }
         if (count($nestedFields) > 1) {
+            // TODO: Throw exception instead.
             wp_die('Multiple nested forms found!');
         }
 
